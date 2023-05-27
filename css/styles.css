@@ -1,4 +1,50 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
-}
+    }
+    /**---Bez krapok v spiskax---*/
+    ul {
+        list-style-type: none;
+    }
+    /**---Bez pidkreslenya---*/
+    a {
+        text-decoration: none;
+    }
+    /**--------HEADER-------*/
+    .header {}
+    .header-navigation {}
+    .header-logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #2E2F42;
+    }
+    .header-logo span {
+        color: #4D5AE5;
+    }
+    .header-menu {}
+    .header-menu-item {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+    .header-menu-link {}
+    .header-address {}
+    .header-address-menu {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .address-item {}
+    .address-link {}
+
