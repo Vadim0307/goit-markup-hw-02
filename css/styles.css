@@ -1,14 +1,38 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: #434455;
     }
+
+    :root {
+    --title-color: #2E2F42;
+    --text-color: #434455;
+    }
+    
     /**-------Bez krapok v spiskax-----*/
-    ul {
-        list-style-type: none;
+    .list {
+        list-style: none;
     }
+
     /**--------Bez pidkreslenya--------*/
-    a {
-        text-decoration: none;
+    .link {
+    text-decoration: none;    
     }
+    
+    .section-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--title-color);
+    }
+
+    .section-text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+    }
+
     /**--------------HEADER------------*/
     .header {}
     .header-navigation {}
@@ -19,42 +43,37 @@ body {
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        color: #2E2F42;
+        color: var(--title-color);
     }
     .header-logo span {
         color: #4D5AE5;
     }
     .header-menu {}
     .header-menu-item {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--title-color);
     }
     .header-menu-link {}
     .header-address {}
     .header-address-menu {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--text-color);
     }
     .address-item {}
-    .address-link {}
+    .address-link:hover, .address-link:focus {
+        color: #fd9222;
+    }
 
     /*todo-------------MAIN------------*/
 
     /**--------------Section 1---------*/
     .reclama {}
     .reclama-effective {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -69,6 +88,11 @@ body {
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .reclama-btn:hover, .reclama-btn:focus {
+        color: #fd9222;
     }
 
      /**--------------Section 2---------*/
@@ -76,187 +100,48 @@ body {
     .directions-title {}
     .directions-menu {}
     .directions-item {}
-    .directions-strategy-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .directions-strategy-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .directions-punctuality-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .directions-punctuality-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .directions-diligence-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .directions-diligence-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .directions-technologies-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .directions-technologies-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+    .directions-strategy-title {}
+    .directions-strategy-text {}
+    .directions-punctuality-title {}
+    .directions-punctuality-text {}
+    .directions-diligence-title {}
+    .directions-diligence-text {}
+    .directions-technologies-title {}
+    .directions-technologies-text {}
 
     /**--------------Section 3---------*/
     .doing {}
     .doing-title {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: #2E2F42;
+        color: var(--title-color);
     }
     .doing-menu {}
     .doing-item {}
-    .doing-monitor {}
-    .doing-telefon {}
-    .doing-link {}   
-
+    
     /**--------------Section 4---------*/
     .team {}
     .team-title {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: #2E2F42;
+        color: var(--title-color);
     }
     .team-menu {}
     .team-item {}
-    .foto-guerrero {}
-    .team-guerrero-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .team-guerrero-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .foto-ford {}
-    .team-ford-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .team-ford-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .foto-garcia {}
-    .team-garcia-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .team-garcia-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .foto-wilson {}
-    .team-wilson-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .team-wilson-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+    .team-guerrero-title {}
+    .team-guerrero-text {}
+    .team-ford-title {}
+    .team-ford-text {}
+    .team-garcia-title {}
+    .team-garcia-text {}
+    .team-wilson-title {}
+    .team-wilson-text {}
 
     /**--------------FOOTER---------*/
     .footer {}
@@ -274,9 +159,6 @@ body {
         color: #4D5AE5;
     }
     .footer-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -287,27 +169,24 @@ body {
     
     .p-header-menu {}
     .p-header-menu-item {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--title-color);
     }
     .p-header-menu-link {}
     .p-header-address {}
         .p-header-address-menu {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455; 
+        color: var(--text-color); 
     }
     .p-address-item {}
-    .p-address-link {}
+    .p-address-link:hover, .p-address-link:focus {
+        color: #fd9222;
+    }
     
     /**---Portfolio------Section 1---------*/
     .button-menu {}
@@ -321,7 +200,13 @@ body {
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #FFFFFF;
+        cursor: pointer;
     }
+
+    .button-menu-all:hover, .button-menu-all:focus {
+        color: #fd9222;
+    }
+
     .button-menu-general {
         font-family: 'Roboto';
         font-style: normal;
@@ -330,180 +215,41 @@ body {
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #4D5AE5;
+        cursor: pointer;
     }
     
+    .button-menu-general:hover, .button-menu-general:focus {
+        color: #fd9222;
+    }
+
     /**---Portfolio------Section 2---------*/
     .section-two-menu {}
     .section-two-item {}
-    .banking-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .banking-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .cashless-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .cashless-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .meditation-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .meditation-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+    .banking-title {}
+    .banking-text {}
+    .cashless-title {}
+    .cashless-text {}
+    .meditation-title {}
+    .meditation-text {}
 
      /**---Portfolio------Section 3---------*/
      .section-three-menu {}
     .section-three-item {}
-    .taxi-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .taxi-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .screen-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .screen-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .online-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .online-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+    .taxi-title {}
+    .taxi-text {}
+    .screen-title {}
+    .screen-text {}
+    .online-title {}
+    .online-text {}
 
     /**---Portfolio------Section 4---------*/
     .section-four-menu {}
     .section-four-item {}
-    .instagram-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .instagram-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .organic-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .organic-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    .fresh-title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-    }
-    .fresh-text {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+    .instagram-title {}
+    .instagram-text {}
+    .organic-title {}
+    .organic-text {}
+    .fresh-title {}
+    .fresh-text {}
     
     
