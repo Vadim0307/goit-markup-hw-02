@@ -116,7 +116,7 @@ body {
     }
 
     .reclama-btn:hover, .reclama-btn:focus {
-        color: #404bbf;
+        background-color: #404bbf;
     }
 
     /**-------INDEX---Section 2---------*/
@@ -142,7 +142,9 @@ body {
     .doing-item {}
     
     /**-------INDEX---Section 4---------*/
-    .team {}
+    .team {
+        background-color: #F4F4FD;
+    }
     .team-title {
         font-weight: 700;
         font-size: 36px;
@@ -150,7 +152,6 @@ body {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
-        background-color: #F4F4FD;
         text-align: center;
     }
     .team-menu {}
@@ -253,7 +254,8 @@ body {
     .section-menu {
         list-style: none;
     }
-    .section-item {
+    .section-item {}
+    .block {
         text-decoration: none;
     }
     .banking-title {}
