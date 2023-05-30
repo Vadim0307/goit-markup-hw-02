@@ -1,11 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
+    background-color: #FFFFFF;
     }
 
     :root {
     --title-color: #2E2F42;
     --text-color: #434455;
+    --logo-color: #4d5ae5;
     }
     
     /**-------Bez krapok v spiskax-----*/
@@ -37,13 +39,15 @@ body {
     .header {}
     .header-navigation {}
     .header-logo {
-        font-family: 'Raleway';
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        color: var(--title-color);
+        color: var(--logo-color);
+        text-transform: uppercase;
+        text-decoration: none;
     }
     .header-logo span {
         color: #4D5AE5;
@@ -55,9 +59,20 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-color);
+        text-decoration: none;
     }
-    .header-menu-link {}
-    .header-address {}
+    .header-menu-link {
+        color:var(--title-color);
+    }
+
+    .header-menu-link:hover, .header-menu-link:focus {
+        color: #404bbf;
+    }
+
+
+    .header-address {
+        font-style: normal;
+    }
     .header-address-menu {
         font-size: 16px;
         line-height: 1.5;
@@ -65,23 +80,30 @@ body {
         color: var(--text-color);
     }
     .address-item {}
+    .address-link {
+        color: var(--text-color);
+    }
     .address-link:hover, .address-link:focus {
-        color: #fd9222;
+        color: #404bbf;
     }
 
     /*todo-------------MAIN------------*/
 
     /**--------------Section 1---------*/
-    .reclama {}
+    
+    .reclama {
+        background-color: var(--title-color);
+    }
     .reclama-effective {
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        text-align: center;
     }
     .reclama-btn {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -89,10 +111,11 @@ body {
         letter-spacing: 0.04em;
         color: #FFFFFF;
         cursor: pointer;
+        background-color: var(--logo-color);
     }
 
     .reclama-btn:hover, .reclama-btn:focus {
-        color: #fd9222;
+        color: #404bbf;
     }
 
      /**--------------Section 2---------*/
@@ -100,15 +123,9 @@ body {
     .directions-title {}
     .directions-menu {}
     .directions-item {}
-    .directions-strategy-title {}
-    .directions-strategy-text {}
-    .directions-punctuality-title {}
-    .directions-punctuality-text {}
-    .directions-diligence-title {}
-    .directions-diligence-text {}
-    .directions-technologies-title {}
-    .directions-technologies-text {}
-
+    .directions-subtitle {}
+    .directions-subtext {}
+    
     /**--------------Section 3---------*/
     .doing {}
     .doing-title {
@@ -118,6 +135,7 @@ body {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
+        text-align: center;
     }
     .doing-menu {}
     .doing-item {}
@@ -131,32 +149,33 @@ body {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
+        background-color: #F4F4FD;
+        text-align: center;
     }
     .team-menu {}
-    .team-item {}
-    .team-guerrero-title {}
-    .team-guerrero-text {}
-    .team-ford-title {}
-    .team-ford-text {}
-    .team-garcia-title {}
-    .team-garcia-text {}
-    .team-wilson-title {}
-    .team-wilson-text {}
-
+    .team-item {
+        background-color: #FFFFFF;
+    }
+    .team-subtitle {}
+    .team-subtext {}
+    
     /**--------------FOOTER---------*/
-    .footer {}
+    .footer {
+        background-color: var(--title-color);
+    }
     .footer-logo {
-        font-family: 'Raleway';
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #F4F4FD;
+        color: var(--logo-color);
+        text-decoration: none;
     }
     .footer-logo span {
-        color: #4D5AE5;
+        color: var(--logo-color);
     }
     .footer-text {
         font-size: 16px;
@@ -174,18 +193,31 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-color);
+        text-decoration: none;
     }
-    .p-header-menu-link {}
-    .p-header-address {}
-        .p-header-address-menu {
+    .p-header-menu-link {
+        color: var(--title-color);
+    }
+    .p-header-menu-link:hover, .p-header-menu-link:focus {
+        color: #404bbf;
+    }
+    .p-header-address {
+        font-style: normal;
+    }
+    .p-header-address-menu {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--text-color); 
+        font-style: normal;
     }
-    .p-address-item {}
+    .p-address-item {
+        color: var(--text-color);
+    }
+    .p-address-link {
+        color: var(--text-color);
+    }
     .p-address-link:hover, .p-address-link:focus {
-        color: #fd9222;
+        color: #404bbf;
     }
     
     /**---Portfolio------Section 1---------*/
@@ -214,7 +246,7 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #4D5AE5;
+        color: var(--logo-color);
         cursor: pointer;
     }
     
@@ -233,7 +265,7 @@ body {
     .meditation-text {}
 
      /**---Portfolio------Section 3---------*/
-     .section-three-menu {}
+    .section-three-menu {}
     .section-three-item {}
     .taxi-title {}
     .taxi-text {}
