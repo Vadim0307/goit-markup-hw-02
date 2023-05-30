@@ -35,7 +35,7 @@ body {
         color: var(--text-color);
     }
 
-    /**--------------HEADER------------*/
+    /**------INDEX-----Header------------*/
     .header {}
     .header-navigation {}
     .header-logo {
@@ -49,9 +49,12 @@ body {
         text-transform: uppercase;
         text-decoration: none;
     }
-    .header-logo span {
+    .header-logo {
         color: #4D5AE5;
     }
+    .span-header {
+        color: var(--title-color);
+    }    
     .header-menu {}
     .header-menu-item {
         font-weight: 500;
@@ -68,7 +71,6 @@ body {
     .header-menu-link:hover, .header-menu-link:focus {
         color: #404bbf;
     }
-
 
     .header-address {
         font-style: normal;
@@ -87,10 +89,9 @@ body {
         color: #404bbf;
     }
 
-    /*todo-------------MAIN------------*/
+    /*todo----INDEX----Main-------------*/
 
-    /**--------------Section 1---------*/
-    
+    /**-------INDEX---Section 1---------*/
     .reclama {
         background-color: var(--title-color);
     }
@@ -118,15 +119,15 @@ body {
         color: #404bbf;
     }
 
-     /**--------------Section 2---------*/
-     .directions {}
+    /**-------INDEX---Section 2---------*/
+    .directions {}
     .directions-title {}
     .directions-menu {}
     .directions-item {}
     .directions-subtitle {}
     .directions-subtext {}
     
-    /**--------------Section 3---------*/
+    /**-------INDEX---Section 3---------*/
     .doing {}
     .doing-title {
         font-weight: 700;
@@ -140,7 +141,7 @@ body {
     .doing-menu {}
     .doing-item {}
     
-    /**--------------Section 4---------*/
+    /**-------INDEX---Section 4---------*/
     .team {}
     .team-title {
         font-weight: 700;
@@ -159,8 +160,9 @@ body {
     .team-subtitle {}
     .team-subtext {}
     
-    /**--------------FOOTER---------*/
+    /**-------INDEX---Footer---------*/
     .footer {
+        font-family: 'Raleway', sans-serif;
         background-color: var(--title-color);
     }
     .footer-logo {
@@ -174,7 +176,7 @@ body {
         color: var(--logo-color);
         text-decoration: none;
     }
-    .footer-logo span {
+    .footer-logo {
         color: var(--logo-color);
     }
     .footer-text {
@@ -183,8 +185,11 @@ body {
         letter-spacing: 0.02em;
         color: #F4F4FD;
     }
+    .span-footer {
+        color: #F4F4FD;
+    }
 
-    /**---Portfolio------HEADER---------*/
+    /**---PORTFOLIO------Header---------*/
     
     .p-header-menu {}
     .p-header-menu-item {
@@ -220,27 +225,14 @@ body {
         color: #404bbf;
     }
     
-    /**---Portfolio------Section 1---------*/
-    .button-menu {}
+    /**---PORTFOLIO------Block1------------*/
+    .button-menu {
+        list-style: none;
+    }
     .button-menu-item {}
 
-    .button-menu-all {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-        cursor: pointer;
-    }
-
-    .button-menu-all:hover, .button-menu-all:focus {
-        color: #fd9222;
-    }
-
     .button-menu-general {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -248,40 +240,41 @@ body {
         letter-spacing: 0.04em;
         color: var(--logo-color);
         cursor: pointer;
-    }
-    
-    .button-menu-general:hover, .button-menu-general:focus {
-        color: #fd9222;
+        background-color: #F4F4FD;
     }
 
-    /**---Portfolio------Section 2---------*/
-    .section-two-menu {}
-    .section-two-item {}
+    .button-menu-general:hover, .button-menu-general:focus {
+        color: #FFFFFF;
+        background-color: #404bbf;
+    }
+
+    /**---PORTFOLIO------Block 2-4----------*/
+    
+    .section-menu {
+        list-style: none;
+    }
+    .section-item {
+        text-decoration: none;
+    }
     .banking-title {}
     .banking-text {}
     .cashless-title {}
     .cashless-text {}
     .meditation-title {}
     .meditation-text {}
-
-     /**---Portfolio------Section 3---------*/
-    .section-three-menu {}
-    .section-three-item {}
     .taxi-title {}
     .taxi-text {}
     .screen-title {}
     .screen-text {}
     .online-title {}
     .online-text {}
-
-    /**---Portfolio------Section 4---------*/
-    .section-four-menu {}
-    .section-four-item {}
     .instagram-title {}
     .instagram-text {}
     .organic-title {}
     .organic-text {}
     .fresh-title {}
     .fresh-text {}
+
+    /**---PORTFOLIO------Footer-------------*/
     
     
