@@ -258,24 +258,9 @@ body {
     .block {
         text-decoration: none;
     }
-    .banking-title {}
-    .banking-text {}
-    .cashless-title {}
-    .cashless-text {}
-    .meditation-title {}
-    .meditation-text {}
-    .taxi-title {}
-    .taxi-text {}
-    .screen-title {}
-    .screen-text {}
-    .online-title {}
-    .online-text {}
-    .instagram-title {}
-    .instagram-text {}
-    .organic-title {}
-    .organic-text {}
-    .fresh-title {}
-    .fresh-text {}
+    .block-title {}
+    .block-text {}
+    
 
     /**---PORTFOLIO------Footer-------------*/
     
