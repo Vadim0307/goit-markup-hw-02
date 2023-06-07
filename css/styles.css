@@ -1,13 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+    color: var(--text-color);
+    background-color: var(--white-color);
     }
 
     :root {
     --title-color: #2E2F42;
     --text-color: #434455;
     --logo-color: #4d5ae5;
+    --text-color:#434455;
+    --white-color: #FFFFFF;
+    --link-color: #404bbf;
+    --backgr-color: #F4F4FD;
     }
     
     /**-------Bez krapok v spiskax-----*/
@@ -32,7 +36,6 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--text-color);
     }
 
     /**------INDEX-----Header------------*/
@@ -40,7 +43,6 @@ body {
     .header-navigation {}
     .header-logo {
         font-family: 'Raleway', sans-serif;
-        font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
@@ -50,43 +52,42 @@ body {
         text-decoration: none;
     }
     .header-logo {
-        color: #4D5AE5;
+        color: var(--logo-color);
     }
     .span-header {
         color: var(--title-color);
     }    
     .header-menu {}
-    .header-menu-item {
+    .header-menu-item {}
+    .header-menu-link {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-color);
         text-decoration: none;
-    }
-    .header-menu-link {
         color:var(--title-color);
     }
 
     .header-menu-link:hover, .header-menu-link:focus {
-        color: #404bbf;
+        color: var(--link-color);
     }
 
     .header-address {
         font-style: normal;
     }
     .header-address-menu {
+        color: var(--text-color);
+    }
+    .address-item {}
+    .address-link {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
     }
-    .address-item {}
-    .address-link {
-        color: var(--text-color);
-    }
     .address-link:hover, .address-link:focus {
-        color: #404bbf;
+        color: var(--link-color);
     }
 
     /*todo----INDEX----Main-------------*/
@@ -100,23 +101,22 @@ body {
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
-        color: #FFFFFF;
+        color: var(--white-color);
         text-align: center;
     }
     .reclama-btn {
         font-family: 'Roboto', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
+        color: var(--white-color);
         cursor: pointer;
         background-color: var(--logo-color);
     }
 
     .reclama-btn:hover, .reclama-btn:focus {
-        background-color: #404bbf;
+        background-color: var(--link-color);
     }
 
     /**-------INDEX---Section 2---------*/
@@ -156,14 +156,13 @@ body {
     }
     .team-menu {}
     .team-item {
-        background-color: #FFFFFF;
+        background-color: var(--white-color);
     }
     .team-subtitle {}
     .team-subtext {}
     
     /**-------INDEX---Footer---------*/
     .footer {
-        font-family: 'Raleway', sans-serif;
         background-color: var(--title-color);
     }
     .footer-logo {
@@ -184,10 +183,10 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #F4F4FD;
+        color: var(--backgr-color);
     }
     .span-footer {
-        color: #F4F4FD;
+        color: var(--backgr-color);
     }
 
     /**---PORTFOLIO------Header---------*/
@@ -205,7 +204,7 @@ body {
         color: var(--title-color);
     }
     .p-header-menu-link:hover, .p-header-menu-link:focus {
-        color: #404bbf;
+        color: var(--link-color);
     }
     .p-header-address {
         font-style: normal;
@@ -223,7 +222,7 @@ body {
         color: var(--text-color);
     }
     .p-address-link:hover, .p-address-link:focus {
-        color: #404bbf;
+        color: var(--link-color);
     }
     
     /**---PORTFOLIO------Block1------------*/
@@ -234,19 +233,18 @@ body {
 
     .button-menu-general {
         font-family: 'Roboto', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: var(--logo-color);
         cursor: pointer;
-        background-color: #F4F4FD;
+        background-color: var(--backgr-color);
     }
 
     .button-menu-general:hover, .button-menu-general:focus {
-        color: #FFFFFF;
-        background-color: #404bbf;
+        color: var(--white-color);
+        background-color: var(--link-color);
     }
 
     /**---PORTFOLIO------Block 2-4----------*/
