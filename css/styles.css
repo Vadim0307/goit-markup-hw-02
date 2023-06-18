@@ -36,7 +36,7 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: var(--text-color)
+        /* color: var(--text-color) */
     }
 
     /**------INDEX-----Header------------*/
@@ -78,7 +78,7 @@ body {
         font-style: normal;
     }
     .header-address-menu {
-        color: var(--text-color);
+        /* color: var(--text-color); */
     }
     .address-item {}
     .address-link {
